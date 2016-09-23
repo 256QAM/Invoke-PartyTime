@@ -47,7 +47,7 @@ Function Invoke-PartyTime {
 					Invoke-Command @PartyParams
 					Write-Output "$_ is going down to partytown!"
 				} else {
-					Write-Output '$_ is at another party :('
+					Write-Output "$_ is at another party :("
 				}
 			}
 		} catch {
