@@ -22,7 +22,7 @@ Function Invoke-PartyTime {
 			If ($time -eq -1){
 				Write-Verbose "WE ROWDY"
 			} else {
-				$Time - 1 
+				$Time -= 1 
 			}
 			While ($time -lt 1){
 				Partayy
