@@ -19,14 +19,14 @@ Function Invoke-PartyTime {
 					Write-Error "Failed to operate the disk. Details : $_"
 				}
 			}
-			If ($time -eq -1){
-				Write-Verbose "WE ROWDY"
-			} else {
-				$Time -= 1 
-			}
-			While ($time -lt 1){
+			While (($time -Ge 1) -or ($time -eq -1)){
 				Partayy
-			Write-Verbose ("0: THE PARTY DONT START TILL I SNMPWALK IN")
+				Write-Verbose ("0: THE PARTY DONT START TILL I SNMPWALK IN")
+				If ($Time -eq -1){
+					$Write-Verbose ("0: WE ROWDY")
+				} else {
+					$time -= 1
+				}
 			}
 		}
 	}
