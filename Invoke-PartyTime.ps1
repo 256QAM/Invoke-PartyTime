@@ -51,8 +51,7 @@ Function Invoke-PartyTime {
 				}
 			}
 		} catch {
-			Write-Output "$_ is a partypooper. Lame Excuse: "
-			Write-Output $_.ExceptionMessage
+			Write-Output "Lame Excuses: $_"
 		}
 	}
 	
